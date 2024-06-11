@@ -1,5 +1,4 @@
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Alien%20Monster.png" alt="Alien Monster" width="25" height="25" /> ft_transcendence
-This project is about creating a website for the mighty Pong contest!
 
 <div align=center>
   
@@ -17,7 +16,7 @@ This project is about creating a website for the mighty Pong contest!
 
 </div>
 
-
+This project is about creating a website for the mighty Pong contest! The subject of the project can be found [here](https://raw.githubusercontent.com/angelamcosta/ft_transcendence/main/en.subject.pdf).
 
 ## Modules
 
