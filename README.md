@@ -54,3 +54,8 @@ This project is about creating a website for the mighty Pong contest!
 - [ ] Major module: Infrastructure Setup for Log Management.
 - [ ] Minor module: Monitoring system.
 - [ ] Major module: Designing the Backend as Microservices.
+
+## References
+- [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
+- [What is a virtualenv, and why should I use one?](https://stackoverflow.com/questions/41972261/what-is-a-virtualenv-and-why-should-i-use-one)
+- [What is the use of PYTHONUNBUFFERED in docker file?](https://stackoverflow.com/questions/59812009/what-is-the-use-of-pythonunbuffered-in-docker-file)
