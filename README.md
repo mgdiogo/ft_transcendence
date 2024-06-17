@@ -79,7 +79,7 @@ To attain 100% project completion, a minimum of 7 major modules is required. Two
 ### Devops
 - [ ] Major module: Infrastructure Setup for Log Management.
 - [ ] Minor module: Monitoring system.
-- [ ] Major module: Designing the Backend as Microservices.
+- [x] Major module: Designing the Backend as Microservices.
 
 ### Graphics
 - [ ] Major module: Use of advanced 3D techniques.
@@ -101,3 +101,5 @@ API Integration.
 - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
 - [What is a virtualenv, and why should I use one?](https://stackoverflow.com/questions/41972261/what-is-a-virtualenv-and-why-should-i-use-one)
 - [What is the use of PYTHONUNBUFFERED in docker file?](https://stackoverflow.com/questions/59812009/what-is-the-use-of-pythonunbuffered-in-docker-file)
+- [django.urls functions for use in URLconfs](https://docs.djangoproject.com/en/5.0/ref/urls/#handler400)
+- [Data Migration from Monolith to Microservice in Django ](https://dev.to/balwanishivam/data-migration-from-monolith-to-microservice-in-django-5b9m)
