@@ -14,11 +14,38 @@
 
 [![My Skills](https://skillicons.dev/icons?i=bootstrap,docker,django,python,postgres,bash&theme=dark)](https://skillicons.dev)
 
+
+[![forthebadge](https://forthebadge.com/images/badges/docker-container.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-love__.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) 
+
+</div>
+
+<div align=center>
+
+  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/angelamcosta/ft_transcendence" /> <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/angelamcosta/ft_transcendence" /> <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/angelamcosta/ft_transcendence" /> <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/angelamcosta/ft_transcendence" /> <img alt="Github License" src="https://img.shields.io/github/license/angelamcosta/ft_transcendence" /> <a href="https://wakatime.com/badge/user/0c29d5b3-c30b-4e1a-ad07-2da3bd4f7e05/project/ae9b77b3-210d-4f50-a73b-4cf4ac753c11"><img src="https://wakatime.com/badge/user/0c29d5b3-c30b-4e1a-ad07-2da3bd4f7e05/project/ae9b77b3-210d-4f50-a73b-4cf4ac753c11.svg" alt="wakatime"></a>
+
 </div>
 
 This project is about creating a website for the mighty Pong contest! The subject of the project can be found [here](https://raw.githubusercontent.com/angelamcosta/ft_transcendence/main/en.subject.pdf).
 
+## Minimal technical requirement
+
+> [!IMPORTANT]  
+> Some of these contraints could be overriden by the choice of specific modules.
+
+The project must comply with the following rules:
+
+- Development of the site can be done with or without a backend.
+  - If a backend is included, it must be written in pure Ruby, unless overridden by the [Framework module](#web).
+  - If a backend or framework uses a database, the constraints of the [Database module](#web) must be followed.
+- The frontend should be developed using pure vanilla JavaScript, unless altered through the [FrontEnd module](#web).
+- The website must be a single-page application, allowing the use of the Back and Forward buttons in the browser.
+- Compatibility with the latest stable version of _Google Chrome_ is required.
+- Users should not encounter any unhandled errors or warnings while browsing the website.
+- The entire project must be launched with a single command line to run an autonomous container provided by Docker. Example: `docker-compose up --build` or `make`.
+
 ## Modules
+
+To attain 100% project completion, a minimum of 7 major modules is required. Two Minor Modules are equivalent to one Major Module.
 
 ### Web
 - [x] Major module: Use a Framework as backend.
@@ -53,6 +80,22 @@ This project is about creating a website for the mighty Pong contest! The subjec
 - [ ] Major module: Infrastructure Setup for Log Management.
 - [ ] Minor module: Monitoring system.
 - [ ] Major module: Designing the Backend as Microservices.
+
+### Graphics
+- [ ] Major module: Use of advanced 3D techniques.
+
+### Accessibility
+- [ ] Minor module: Support on all devices.
+- [ ] Minor module: Expanding Browser Compatibility.
+- [ ] Minor module: Multiple language supports.
+- [ ] Minor module: Add accessibility for Visually Impaired Users.
+- [ ] Minor module: Server-Side Rendering (SSR) Integration.
+
+### Server-Side Pong
+- [ ] Major module: Replacing Basic Pong with Server-Side Pong and Imple-
+menting an API.
+- [ ] Major module: Enabling Pong Gameplay via CLI against Web Users with
+API Integration.
 
 ## References
 - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
