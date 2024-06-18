@@ -10,5 +10,9 @@ down:
 	docker compose down -v
 
 clean:
-	docker container prune
-	docker image prune
+	docker container prune --force
+	docker image prune -a --force
+	docker volume prune -a --force
+	docker builder prune -a --force
+
+fclean: down clean
