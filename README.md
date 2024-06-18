@@ -103,3 +103,7 @@ API Integration.
 - [What is the use of PYTHONUNBUFFERED in docker file?](https://stackoverflow.com/questions/59812009/what-is-the-use-of-pythonunbuffered-in-docker-file)
 - [django.urls functions for use in URLconfs](https://docs.djangoproject.com/en/5.0/ref/urls/#handler400)
 - [Data Migration from Monolith to Microservice in Django ](https://dev.to/balwanishivam/data-migration-from-monolith-to-microservice-in-django-5b9m)
+- [Build and run Django in Docker in 10 minutes (+ bonus tips)](https://youtu.be/JLdEbb8Hcww?si=x4NgjkmEfX-fuWej&t=210)[^1]
+- [How to create User/Database in script for Docker Postgres](https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-script-for-docker-postgres)
+
+[^1]: Setting up a venv for a Django project
