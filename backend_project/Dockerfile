@@ -11,11 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./app /app/
 
-COPY entrypoint.sh /app/
-
-RUN chmod +x /app/entrypoint.sh
-
-ENTRYPOINT ["./entrypoint.sh"]
+RUN python manage.py migrate
 
 EXPOSE 8000
 

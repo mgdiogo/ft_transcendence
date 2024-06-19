@@ -1,11 +1,11 @@
 services:
-  # server:
-  #   container_name: server
-  #   build:
-  #     context: ./backend_project
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - '8000:8000'
+  server:
+    container_name: server
+    build:
+      context: ./backend_project
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
   postgres:
     container_name: postgres
     build:
