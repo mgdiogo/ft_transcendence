@@ -1,8 +1,17 @@
 services:
-  server:
-    container_name: server
+  # server:
+  #   container_name: server
+  #   build:
+  #     context: ./backend_project
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - '8000:8000'
+  postgres:
+    container_name: postgres
     build:
-      context: ./server
+      context: ./postgres
       dockerfile: Dockerfile
+    env_file:
+      - .env
     ports:
-      - '8000:8000'
+      - '5432:5432'

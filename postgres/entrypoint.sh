@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -e
+echo "Executing script..."
 
 envsubst < init.template.sql > /docker-entrypoint-initdb.d/init.sql
 
-exec "$@"
+echo "Finished executing script."

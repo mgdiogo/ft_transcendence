@@ -4,20 +4,14 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y gettext
 
-RUN mkdir -p /var/lib/postgresql/data \
-    && chown -R postgres:postgres /var/lib/postgresql/data
-
 EXPOSE 5432
 
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /docker-entrypoint-initdb.d/entrypoint.sh
 COPY init.template.sql /init.template.sql
 
-RUN chmod +x /entrypoint.sh \
-    && chown postgres:postgres /entrypoint.sh \
+RUN chmod +x /docker-entrypoint-initdb.d/entrypoint.sh \
+    && sed -i 's/\r//' /docker-entrypoint-initdb.d/entrypoint.sh \
+    && chown postgres:postgres /docker-entrypoint-initdb.d/entrypoint.sh \
     && chown -R postgres:postgres /docker-entrypoint-initdb.d/
 
-USER postgres
-
-ENTRYPOINT ["/entrypoint.sh"]
-
-CMD ["postgres"]
+CMD [ "postgres" ]
