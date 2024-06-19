@@ -16,3 +16,5 @@ clean:
 	docker builder prune -a --force
 
 fclean: down clean
+
+re: fclean all
