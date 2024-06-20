@@ -105,5 +105,7 @@ API Integration.
 - [Data Migration from Monolith to Microservice in Django ](https://dev.to/balwanishivam/data-migration-from-monolith-to-microservice-in-django-5b9m)
 - [Build and run Django in Docker in 10 minutes (+ bonus tips)](https://youtu.be/JLdEbb8Hcww?si=x4NgjkmEfX-fuWej&t=210)[^1]
 - [How to create User/Database in script for Docker Postgres](https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-script-for-docker-postgres)
+- [How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/#Using-Docker-Compose)
+- [Dockerizing Django with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/)
 
 [^1]: Setting up a venv for a Django project
