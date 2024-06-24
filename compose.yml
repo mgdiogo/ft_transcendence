@@ -1,28 +1,16 @@
-version: '3.8'
-
 volumes:
   pgdata:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./data/postgres
+      o: bind
 
 networks:
   pong:
     driver: bridge
 
 services:
-  web:
-    container_name: server
-    build:
-      context: ./backend_project
-      dockerfile: Dockerfile
-    ports:
-      - '8000:8000'
-    env_file:
-      - .env
-    depends_on:
-      - postgres
-    links:
-      - postgres
-    networks:
-      - pong
   postgres:
     image: postgres:15
     container_name: postgres
