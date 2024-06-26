@@ -75,7 +75,7 @@ To attain 100% project completion, a minimum of 7 major modules is required. Two
 ### Cybersecurity
 - [ ] Major module: Implement WAF/ModSecurity with Hardened Configuration and HashiCorp Vault for Secrets Management.
 - [ ] Minor module: GDPR Compliance Options with User Anonymization, Local Data Management, and Account Deletion.
-- [ ] Major module: Implement Two-Factor Authentication (2FA) and JWT.
+- [x] Major module: Implement Two-Factor Authentication (2FA) and JWT.
 
 ### Devops
 - [ ] Major module: Infrastructure Setup for Log Management.
