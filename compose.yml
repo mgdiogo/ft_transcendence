@@ -11,6 +11,22 @@ networks:
     driver: bridge
 
 services:
+  user_api:
+    container_name: user_api
+    build:
+      context: ./user_service
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    networks:
+      - pong
+    ports:
+      - '8000:8000'
+    command: >
+      bash -c "sleep 5 && python manage.py migrate &&
+               python manage.py runserver 0.0.0.0:8000"
   postgres:
     image: postgres:15
     container_name: postgres
