@@ -8,4 +8,5 @@ urlpatterns = [
     path('update/<int:user_id>/', api.update_user, name='update_user'),
     path('delete/<int:user_id>/', api.delete_user, name='delete_user'),
     path('auth/', api.auth_user, name='auth_user'),
+    path('logout/', api.logout_user, name='logout_user'),
 ]
