@@ -25,8 +25,7 @@ services:
     ports:
       - '8000:8000'
     command: >
-      bash -c "sleep 5 && python manage.py migrate &&
-               python manage.py runserver 0.0.0.0:8000"
+      bash -c "sleep 5 && python manage.py makemigrations user_api && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
   postgres:
     image: postgres:15
     container_name: postgres
