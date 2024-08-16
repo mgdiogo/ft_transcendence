@@ -11,6 +11,21 @@ networks:
     driver: bridge
 
 services:
+  jwt_api:
+    container_name: jwt_api
+    build:
+      context: ./jwt_auth
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    networks:
+      - pong
+    ports:
+      - '8001:8001'
+    command: >
+      bash -c "sleep 5 && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
   user_api:
     container_name: user_api
     build:

@@ -1,44 +1,21 @@
 import os
-import hmac
-import json
-import base64
-import hashlib
+import requests
 
-SECRET_KEY = os.getenv('JWT_SECRET_KEY')
+JWT_API_URL = os.getenv('JWT_API_URL')
 
+def request_jwt_api(path, method='post', data=None, headers=None):
+    url = f'{JWT_API_URL}/{path}'
+    response = requests.request(method, url, json=data, headers=headers)
+    return response.json(), response.status_code
 
-def base64_encode(data):
-    return base64.urlsafe_b64encode(data).rstrip(b'=').decode('utf-8')
+def create_token(username):
+    data = {'username': username}
+    return request_jwt_api('create/', data=data)
 
+def validate_token(token):
+    headers = {'Authorization': f'Bearer {token}'}
+    request_jwt_api ('validate/', headers=headers)
 
-def base64_decode(data):
-    padding = '=' * (4 - len(data) % 4)
-    return base64.urlsafe_b64decode(data + padding)
-
-
-def generate_jwt(payload, secret=SECRET_KEY):
-    header = json.dumps({'alg': 'HS256', 'typ': 'JWT'}).encode()
-    payload = json.dumps(payload).encode()
-
-    header_encoded = base64_encode(header)
-    payload_encoded = base64_encode(payload)
-
-    signature = hmac.new(secret.encode(), f'{header_encoded}.{
-                         payload_encoded}'.encode(), hashlib.sha256).digest()
-    signature_encoded = base64_encode(signature)
-
-    return f'{header_encoded}.{payload_encoded}.{signature_encoded}'
-
-
-def decode_jwt(token, secret=SECRET_KEY):
-    header_encoded, payload_encoded, signature_encoded = token.split('.')
-
-    signature = hmac.new(secret.encode(), f'{header_encoded}.{
-                         payload_encoded}'.encode(), hashlib.sha256).digest()
-    signature_check = base64_encode(signature)
-
-    if signature_check != signature_encoded:
-        raise ValueError('Invalid signature')
-
-    payload = base64_decode(payload_encoded)
-    return json.loads(payload)
+def invalidate_token(token):
+    headers = {'Authorization': f'Bearer {token}'}
+    request_jwt_api ('validate/', headers=headers)
