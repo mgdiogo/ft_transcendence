@@ -3,7 +3,7 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.contrib.auth.hashers import make_password, check_password
-from .shared_models.models import User
+from .models import User
 from .utils import create_token, validate_token, invalidate_token
 
 VALID_FIELDS = os.getenv('VALID_FIELDS').split(',')
@@ -27,7 +27,7 @@ def jwt_auth(view_func):
         token = extract_token(request)
         if not token:
             return JsonResponse({'error': 'Authorization header missing or invalid'}, status=401)
-        
+
         response_data, status_code = validate_token(token)
         if status_code != 200:
             return JsonResponse({'error': response_data.get('error', 'Token validation failed')}, status=status_code)
@@ -40,6 +40,8 @@ def jwt_auth(view_func):
 def create_user(request):
     if request.method == 'POST':
         try:
+            if not request.body:
+                return JsonResponse({'error': 'No data provided'}, status=400)
             data = json.loads(request.body)
             invalid_fields = validate_fields(data)
             if invalid_fields:
@@ -164,7 +166,7 @@ def auth_user(request):
             else:
                 return JsonResponse({'error': 'Invalid username or password'}, status=401)
         except User.DoesNotExist:
-                return JsonResponse({'error': 'Invalid username or password'}, status=401)
+            return JsonResponse({'error': 'Invalid username or password'}, status=401)
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON'}, status=400)
         except Exception as e:

@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timedelta
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
-from .shared_models.models import User, TokenBlacklist
+from .models import User, TokenBlacklist
 from .utils import generate_jwt, decode_jwt
 
 
