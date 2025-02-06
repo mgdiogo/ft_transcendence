@@ -1,5 +1,3 @@
-PG_DATA	=	./data/postgres
-
 all: build up
 
 build:
@@ -17,8 +15,5 @@ clean:
 	docker image prune -a --force
 	docker volume prune -a --force
 	docker builder prune -a --force
-
-fclean: down clean
-	sudo rm -rf $(PG_DATA)
 
 re: fclean all
