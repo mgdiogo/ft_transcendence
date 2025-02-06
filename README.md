@@ -16,7 +16,7 @@
 [![My Skills](https://skillicons.dev/icons?i=bootstrap,docker,django,python,postgres,bash&theme=dark)](https://skillicons.dev)
 
 
-[![forthebadge](https://forthebadge.com/images/badges/docker-container.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-love__.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/docker-container.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-love__.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com) [![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTcuMjMzMzI5NzcyOTQ5MjIiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxOTcuMjMzMzI5NzcyOTQ5MjIgMzUiPjxyZWN0IHdpZHRoPSIxMDguOTQ5OTk2OTQ4MjQyMTkiIGhlaWdodD0iMzUiIGZpbGw9IiNmZmZmZmYiLz48cmVjdCB4PSIxMDguOTQ5OTk2OTQ4MjQyMTkiIHdpZHRoPSI4OC4yODMzMzI4MjQ3MDcwMyIgaGVpZ2h0PSIzNSIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IHg9IjU0LjQ3NDk5ODQ3NDEyMTA5NCIgeT0iMjEuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidSb2JvdG8nLCBzYW5zLXNlcmlmIiBmaWxsPSIjMDAwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+TUFERSBXSVRIPC90ZXh0Pjx0ZXh0IHg9IjE1My4wOTE2NjMzNjA1OTU3IiB5PSIyMS41IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iJ01vbnRzZXJyYXQnLCBzYW5zLXNlcmlmIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iOTAwIiBsZXR0ZXItc3BhY2luZz0iMiI+RkFTVElGWTwvdGV4dD48L3N2Zz4=)](https://forthebadge.com) 
 
 </div>
 
@@ -36,9 +36,9 @@ This project is about creating a website for the mighty Pong contest! The subjec
 The project must comply with the following rules:
 
 - Development of the site can be done with or without a backend.
-  - If a backend is included, it must be written in pure Ruby, unless overridden by the [Framework module](#web).
+  - If a backend is included, it must be written in pure PHP, unless overridden by the [Framework module](#web).
   - If a backend or framework uses a database, the constraints of the [Database module](#web) must be followed.
-- The frontend should be developed using pure vanilla JavaScript, unless altered through the [FrontEnd module](#web).
+- The frontend should be developed using Typescript, unless altered through the [FrontEnd module](#web).
 - The website must be a single-page application, allowing the use of the Back and Forward buttons in the browser.
 - Compatibility with the latest stable version of _Google Chrome_ is required.
 - Users should not encounter any unhandled errors or warnings while browsing the website.
@@ -50,11 +50,11 @@ To attain 100% project completion, a minimum of 7 major modules is required. Two
 
 ### Web
 - [x] Major module: Use a Framework as backend.
-    - Django
+    - Fastify with Node.js.
 - [x] Minor module: Use a front-end framework or toolkit.
-    - Bootstrap
+    - Tailwind CSS
 - [x] Minor module: Use a database for the backend.
-    - PostgreSQL 
+    -  SQLite 
 - [ ] Major module: Store the score of a tournament in the Blockchain.
 
 ### User Management
