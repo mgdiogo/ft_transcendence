@@ -16,4 +16,4 @@ clean:
 	docker volume prune -a --force
 	docker builder prune -a --force
 
-re: fclean all
+re: clean all

@@ -1,16 +1,15 @@
 FROM debian:stable-slim
 
+WORKDIR /app
+
 RUN apt-get update -y && \
     apt-get upgrade -y && \
-    apt-get install -y curl && \
-    apt-get clean
+    apt-get install -y nodejs npm
 
-COPY ./config/script.sh ./script.sh
-RUN chmod +x script.sh
+COPY ./tools/server.mjs .
 
-COPY ./tools/package.json ./package.json
-COPY ./tools/server.js ./server.js
+RUN npm cache clean --force && \
+    npm init -y && \
+    npm install fastify
 
-ENTRYPOINT [ "./script.sh" ]
-
-CMD [ "node", "server" ]
+CMD [ "node", "server.mjs" ]
