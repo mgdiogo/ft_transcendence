@@ -3,6 +3,14 @@ const fastify = Fastify({
 	logger: true
 })
 
+const listeners = ['SIGINT', 'SIGTERM']
+listeners.forEach((signal) => {
+	process.on(signal, async () => {
+		await fastify.close()
+		process.exit(0)
+	})
+})
+
 fastify.get('/healthcheck', async function handler(request, reply) {
 	return { message: 'success' }
 })
