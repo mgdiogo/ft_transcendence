@@ -6,10 +6,11 @@ RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y nodejs npm
 
-COPY ./tools/server.mjs .
+COPY ./tools/app.mjs .
 
 RUN npm cache clean --force && \
     npm init -y && \
-    npm install fastify
+    npm install fastify && \
+    npm install tailwindcss @tailwindcss/cli
 
-CMD [ "node", "server.mjs" ]
+CMD [ "node", "app.mjs" ]
