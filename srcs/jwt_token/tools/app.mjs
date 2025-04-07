@@ -3,8 +3,8 @@ const fastify = Fastify({
 	logger: true
 })
 
-fastify.get('/', async function handler(request, reply) {
-	return { hello: 'world' }
+fastify.get('/healthcheck', async function handler(request, reply) {
+	return { message: 'success' }
 })
 
 try {
