@@ -93,22 +93,10 @@ To attain 100% project completion, a minimum of 7 major modules is required. Two
 - [ ] Minor module: Server-Side Rendering (SSR) Integration.
 
 ### Server-Side Pong
-- [ ] Major module: Replacing Basic Pong with Server-Side Pong and Imple-
-menting an API.
+- [ ] Major module: Replacing Basic Pong with Server-Side Pong and Implementing an API.
 - [ ] Major module: Enabling Pong Gameplay via CLI against Web Users with
 API Integration.
 
 ## References
-- [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
-- [What is a virtualenv, and why should I use one?](https://stackoverflow.com/questions/41972261/what-is-a-virtualenv-and-why-should-i-use-one)
-- [What is the use of PYTHONUNBUFFERED in docker file?](https://stackoverflow.com/questions/59812009/what-is-the-use-of-pythonunbuffered-in-docker-file)
-- [django.urls functions for use in URLconfs](https://docs.djangoproject.com/en/5.0/ref/urls/#handler400)
-- [Data Migration from Monolith to Microservice in Django ](https://dev.to/balwanishivam/data-migration-from-monolith-to-microservice-in-django-5b9m)
-- [Build and run Django in Docker in 10 minutes (+ bonus tips)](https://youtu.be/JLdEbb8Hcww?si=x4NgjkmEfX-fuWej&t=210)[^1]
-- [How to create User/Database in script for Docker Postgres](https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-script-for-docker-postgres)
-- [How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/#Using-Docker-Compose)
-- [Dockerizing Django with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/)
 - [Fastify - Getting Started](https://fastify.dev/docs/latest/Guides/Getting-Started/)
 - [Token based authentication with Fastify, JWT, and Typescript](https://medium.com/@atatijr/token-based-authentication-with-fastify-jwt-and-typescript-1fa5cccc63c5)
-
-[^1]: Setting up a venv for a Django project
