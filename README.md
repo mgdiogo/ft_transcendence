@@ -108,5 +108,6 @@ API Integration.
 - [How to create User/Database in script for Docker Postgres](https://stackoverflow.com/questions/26598738/how-to-create-user-database-in-script-for-docker-postgres)
 - [How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/#Using-Docker-Compose)
 - [Dockerizing Django with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/)
+- [Fastify - Getting Started](https://fastify.dev/docs/latest/Guides/Getting-Started/)
 
 [^1]: Setting up a venv for a Django project
