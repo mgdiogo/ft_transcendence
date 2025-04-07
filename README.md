@@ -13,7 +13,7 @@
   </tr>
 </table>
 
-[![My Skills](https://skillicons.dev/icons?i=bootstrap,docker,django,python,postgres,bash&theme=dark)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=bootstrap,docker,nodejs,ts,sqlite,bash&theme=dark)](https://skillicons.dev)
 
 
 [![forthebadge](https://forthebadge.com/images/badges/docker-container.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-love__.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com) 
