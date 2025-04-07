@@ -109,5 +109,6 @@ API Integration.
 - [How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/#Using-Docker-Compose)
 - [Dockerizing Django with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/)
 - [Fastify - Getting Started](https://fastify.dev/docs/latest/Guides/Getting-Started/)
+- [Token based authentication with Fastify, JWT, and Typescript](https://medium.com/@atatijr/token-based-authentication-with-fastify-jwt-and-typescript-1fa5cccc63c5)
 
 [^1]: Setting up a venv for a Django project
