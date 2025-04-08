@@ -13,12 +13,28 @@ services:
       context: ./srcs/server/
       dockerfile: Dockerfile
     ports:
+      - "9000:9000"
+    # env_file:
+    #   - .env
+  jwt_token:
+    build:
+      context: ./srcs/jwt_token
+      dockerfile: Dockerfile
+    ports:
       - "3000:3000"
-    env_file:
-      - .env
+  auth:
+    build:
+      context: ./srcs/auth
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
   sqlite:
     build:
       context: ./srcs/sqlite/
       dockerfile: Dockerfile
     volumes:
     - sqlite:/db
+
+networks:
+  transcendence:
+    driver: brigde
